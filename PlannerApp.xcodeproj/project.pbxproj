@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		115260C626F6191900A09E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115260C526F6191900A09E0B /* AppDelegate.swift */; };
-		115260CA26F6191900A09E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115260C926F6191900A09E0B /* ViewController.swift */; };
+		115260CA26F6191900A09E0B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115260C926F6191900A09E0B /* MainTabBarController.swift */; };
 		115260CF26F6191A00A09E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115260CE26F6191A00A09E0B /* Assets.xcassets */; };
 		115260D226F6191A00A09E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115260D026F6191A00A09E0B /* LaunchScreen.storyboard */; };
+		115260DD26F6218E00A09E0B /* PlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115260DC26F6218E00A09E0B /* PlannerViewController.swift */; };
+		115260DF26F621A400A09E0B /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115260DE26F621A400A09E0B /* TasksViewController.swift */; };
+		115260E126F621C000A09E0B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115260E026F621C000A09E0B /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		115260C226F6191900A09E0B /* PlannerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlannerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115260C526F6191900A09E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		115260C926F6191900A09E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115260C926F6191900A09E0B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		115260CE26F6191A00A09E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115260D126F6191A00A09E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115260D326F6191A00A09E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115260DC26F6218E00A09E0B /* PlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerViewController.swift; sourceTree = "<group>"; };
+		115260DE26F621A400A09E0B /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		115260E026F621C000A09E0B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +58,40 @@
 		115260C426F6191900A09E0B /* PlannerApp */ = {
 			isa = PBXGroup;
 			children = (
+				115260D926F61CB500A09E0B /* Application */,
+				115260DA26F61CCE00A09E0B /* Controllers */,
+				115260DB26F61D1F00A09E0B /* Resources */,
+			);
+			path = PlannerApp;
+			sourceTree = "<group>";
+		};
+		115260D926F61CB500A09E0B /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				115260C526F6191900A09E0B /* AppDelegate.swift */,
-				115260C926F6191900A09E0B /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		115260DA26F61CCE00A09E0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				115260C926F6191900A09E0B /* MainTabBarController.swift */,
+				115260DC26F6218E00A09E0B /* PlannerViewController.swift */,
+				115260DE26F621A400A09E0B /* TasksViewController.swift */,
+				115260E026F621C000A09E0B /* ContactsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		115260DB26F61D1F00A09E0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				115260CE26F6191A00A09E0B /* Assets.xcassets */,
 				115260D026F6191A00A09E0B /* LaunchScreen.storyboard */,
 				115260D326F6191A00A09E0B /* Info.plist */,
 			);
-			path = PlannerApp;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115260CA26F6191900A09E0B /* ViewController.swift in Sources */,
+				115260DD26F6218E00A09E0B /* PlannerViewController.swift in Sources */,
+				115260DF26F621A400A09E0B /* TasksViewController.swift in Sources */,
+				115260CA26F6191900A09E0B /* MainTabBarController.swift in Sources */,
 				115260C626F6191900A09E0B /* AppDelegate.swift in Sources */,
+				115260E126F621C000A09E0B /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA3HM9Z55Z;
-				INFOPLIST_FILE = PlannerApp/Info.plist;
+				INFOPLIST_FILE = PlannerApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA3HM9Z55Z;
-				INFOPLIST_FILE = PlannerApp/Info.plist;
+				INFOPLIST_FILE = PlannerApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
